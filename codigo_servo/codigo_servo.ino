@@ -9,10 +9,14 @@ void setup() {
 }
 
 void loop() {
-  servoMotor.write(posicao1);
-delay(1000);
-servoMotor.write(360);
-delay(1000);
+  
+          servoMotor.write(posicao1);
+          Serial.print("aberto");
+          delay(5000);
+          servoMotor.write(180);
+          delay(5000);
+
+         
 }
 
 
